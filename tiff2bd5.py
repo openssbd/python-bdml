@@ -47,7 +47,7 @@ for i, cnt in enumerate(contours):
 		data['y']	= j[1]
 		data.append()
 	# for closed line
-	data['oID']	= ' %06d' % (i)
+	data['oID']	= '%06d' % (i)
 	data['t']	= 0
 	data['entity']	= 'line'
 	data['x']	= cnt[0, 0]
