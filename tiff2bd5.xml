@@ -1,0 +1,22 @@
+<tool id="tiff2bd5" name="tiff to bd5 converter" version="0.1">
+  <description>test code</description>
+  <command>~/galaxy-python/python '${__tool_directory__}/tiff2bd5.py' '$input' '$output'</command>
+  <inputs>
+    <param format="tiff" name="input" type="data" label="source file"/>
+  </inputs>
+  <outputs>
+    <data format="h5" name="output" />
+  </outputs>
+
+  <tests>
+    <test>
+      <param name="input" value="test.tiff"/>
+      <output name="out_file" file="hdf5_output.h5"/>
+    </test>
+  </tests>
+
+  <help>
+This tool converts BW-tiff to bd5.
+  </help>
+
+</tool>
