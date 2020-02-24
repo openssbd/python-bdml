@@ -10,7 +10,7 @@ BD5 is an open HDF5-based format for representing quantitative data of biologica
 
 ### Get started
 usage: tiff2bd5.py input.tiff output.h5
-- input.tiff: binary TIF image file of segmentation result. The ROI (region of interest) should be detected as black pixel.
+- input.tiff: binary TIF image file of segmentation result. The ROI (region of interest) should be detected as white pixel.
 - output.h5: bd5 formatted data file converted from the input.tiff image
 
 ### Issues
