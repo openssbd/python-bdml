@@ -6,7 +6,7 @@ Python codes for BDML/BD5 files.
 tiff2bd5.py is python a program to find contours in a binary image tiff file and saved the contours into BD5 file, an open HDF5-based file format. It can be used together with Galaxy workflow
 
 ### Background
-BD5 is an open HDF5-based format for representing quantitative data of biological dynamics. Such data can be obtained by segmenting images but are often saved as binary image data. By using bioimage informatics techniques such as ImageJ, cell profiler, and segmenter, we can segment and extract those data in numerical form as contours. These numerical data can then saved in the BD5 open HDF5-based format.
+BD5 is an open HDF5-based format for representing quantitative data of biological dynamics. Such data can be obtained by segmenting images but are often saved as binary image data. By using bioimage informatics techniques such as ImageJ, cell profiler, and segmenter, we can segment and extract those data in numerical form as contours. These numerical data can then be saved in the BD5 open HDF5-based format.
 
 ### Get started
 usage: tiff2bd5.py input.tiff output.h5
