@@ -1,5 +1,5 @@
 # python-bdml
-Python codes for finding contours and saving them in BDML/BD5 file. It can be used with Galaxy Workflow
+Python codes for BDML/BD5 files.
 
 ## tiff2bd5.py
 ### Synopsis
