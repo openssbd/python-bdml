@@ -1,21 +1,21 @@
 # python-bdml
-Python codes for BDML/BD5
+Python codes for finding contours and saving them in BDML/BD5 file.
 
 ## tiff2bd5.py
 ### Synopsis
-tiff2bd5.py is a Python program to convert black & white image tiff file to BD5-formatted file.
+tiff2bd5.py is python a program to find contours in a binary image tiff file and saved the contours into BD5 file, an open HDF5-based file format. It can be used together with Galaxy workflow
 
 ### Background
-BD5 is an open HDF5-based format for representing quantitative data of biological dynamics. Such data can be obtained and are often saved as binary image data by using bioimage informatics techniques such as ImageJ, cell profiler, and segmenter.
+BD5 is an open HDF5-based format for representing quantitative data of biological dynamics. Such data can be obtained by segmenting images but are often saved as binary image data. By using bioimage informatics techniques such as ImageJ, cell profiler, and segmenter, we can segment and extract those data in numerical form as contours. These numerical data can then saved in the BD5 open HDF5-based format.
 
 ### Get started
 usage: tiff2bd5.py input.tiff output.h5
-- input.tiff: binary TIF image file of segmentation result. The ROI (region of interest) should be detected as white pixel.
-- output.h5: bd5 formatted data file converted from the input.tiff image
+- input.tiff: binary TIF image file, e.g. result of segmentation . The ROI (region of interest) should be detected as white pixel.
+- output.h5: contours are calculated from input.tiff image and saved as bd5 formatted data file. 
 
 ### Issues
-1. Only single TIF image file can be applied as an input.
-2. objectDef and scaleUnit datasets must be added to meet the specification of BD5 format.
+1. Only single TIF image file can be applied as input.
+2. objectDef and scaleUnit datasets must be added separately to meet the specification of BD5 format.
 3. A warning (NaturalNameWarning) will occur while running tiff2bd5.py, but BD5 file can be generated.
 
 ### For the galaxy workflow
